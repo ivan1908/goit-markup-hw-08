@@ -409,56 +409,57 @@
             <form class="form">
                 <p class="form__title">Залиште свої дані, ми вам передзвонимо</p>
                 <div class="form__field">
-                    <label class="form-label">
+                    <label class="form__label">
                         Ім'я
-                        <span class="form-icon-position">
-                            <input type="text" class="form-input" name="name">
-                            <svg class="form-icon">
+                        <span class="form__icon-place">
+                            <input type="text" class="form__input" name="name">
+                            <svg class="form__icon">
                                 <use href="./images/icons.svg#form-person"></use>
                             </svg>
                         </span>
                     </label>
                 </div>
                 <div class="form__field">
-                    <label class="form-label">
+                    <label class="form__label">
                         Телефон
-                        <span class="form-icon-position">
-                            <input type="tel" class="form-input" name="tel">
-                            <svg class="form-icon">
+                        <span class="form__icon-place">
+                            <input type="tel" class="form__input" name="tel">
+                            <svg class="form__icon">
                                 <use href="./images/icons.svg#form-phone"></use>
                             </svg>
                         </span>
                     </label>
                 </div>
                 <div class="form__field">
-                    <label for="mail" class="form-label">
+                    <label class="form__label">
                         Пошта
-                        <span class="form-icon-position">
-                            <input type="email" class="form-input" name="mail" id="mail">
-                            <svg class="form-icon">
+                        <span class="form__icon-place">
+                            <input type="email" class="form__input" name="mail">
+                            <svg class="form__icon">
                                 <use href="./images/icons.svg#form-email"></use>
                             </svg>
                         </span>
                     </label>
                 </div>
-                <div class="form-field-feedback">
-                    <label for="feedback" class="form-label">Коментар</label>
-                    <textarea name="feedback" class="comment" rows="5" id="feedback" placeholder="Введіть текст"></textarea>
-                </div>
-                <div class="checkbox form-field-checkbox">
-                    <label class="label">
-                        <input class="checkbox-input" type="checkbox" name="policy" value="">
-                        <svg class="icon">
-                            <use href="./images/icons.svg#icon-check"></use>
-                        </svg>
-                        Погоджуюся з розсилкою та приймаю &nbsp;<a class="form-checkbox-policy" href="#">Умови договору</a>
+                <div class="feedback">
+                    <label class="form__label">
+                        Коментар
+                        <textarea class="feedback__text" name="feedback" rows="5" placeholder="Введіть текст"></textarea>
                     </label>
                 </div>
-                <button type="submit" class="button-submit">Відправити</button>
+                <div class="checkbox">
+                    <label class="checkbox__label">
+                        <input class="checkbox__input" type="checkbox" name="policy" value="">
+                        <svg class="checkbox__icon">
+                            <use href="./images/icons.svg#icon-check"></use>
+                        </svg>
+                        Погоджуюся з розсилкою та приймаю &nbsp;<a class="checkbox__policy" href="#">Умови договору</a>
+                    </label>
+                </div>
+                <button type="submit" class="form__button">Відправити</button>
             </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
-
 </body>
 </html>
