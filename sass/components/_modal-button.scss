@@ -1,0 +1,26 @@
+.modal__button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--logo-second-part-top);
+    transition: fill var(--transition-dur-and-func);
+    &:focus,
+    &:hover {
+        fill: var(--button-bg-color);
+    }
+}
+
+.modal__icon {
+    width: 18px;
+    height: 18px;
+}

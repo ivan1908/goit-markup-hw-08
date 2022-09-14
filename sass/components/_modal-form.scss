@@ -1,0 +1,175 @@
+.form {
+    width: 448px;
+}
+
+.form__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form__label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--body-color);
+}
+
+.form__icon-place {
+    position: relative;
+    fill: var(--button-filter-color);
+}
+
+.form__input {
+    margin-top: 4px;
+    height: 40px;
+    width: 100%;
+    padding: 12px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color var(--transition-dur-and-func);
+    &:focus {
+        border-color: var(--button-bg-color);
+    }
+    &:focus+.form__icon {
+        fill: var(--link-color);
+    }
+}
+
+.form__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    width: 18px;
+    height: 18px;
+    transform: translateY(-50%);
+    transition: fill var(--transition-dur-and-func);
+}
+
+
+
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback__text {
+    margin-top: 4px;
+    height: 120px;
+    width: 100%;
+    resize: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    transition: border-color var(--transition-dur-and-func);
+    &:focus {
+        border-color: var(--button-bg-color);
+    }
+    &::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+    }
+}
+
+
+
+.checkbox {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.checkbox__label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    transition: background-color var(--transition-dur-and-func);
+    transition: border-color var(--transition-dur-and-func);
+    transition: filter var(--transition-dur-and-func);
+    transition: box-shadow var(--transition-dur-and-func);
+    &:checked+.checkbox__icon {
+        background-color: var(--button-bg-color);
+        border-color: var(--button-bg-color);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    &:focus+.checkbox__icon {
+        box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.5);
+    }
+
+}
+
+.checkbox__icon {
+    width: 16px;
+    height: 15px;
+    fill: #ffffff;
+    margin-right: 7px;
+    border-radius: 2px;
+    border: 2px solid var(--button-filter-color);
+}
+
+
+
+
+
+.checkbox__policy {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.17;
+    color: var(--link-color);
+}
+
+.form__button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    border: none;
+    padding: 10px 32px;
+    width: 200px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    color: var(--button-color);
+    background-color: var(--button-bg-color);
+    font-family: inherit;
+    transition: background-color var(--transition-dur-and-func);
+    &:hover,
+    &:focus {
+        background-color: var(--buton-bg-color-focus);
+    }
+}
+
