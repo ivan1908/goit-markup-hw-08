@@ -848,6 +848,8 @@ body {
 @media screen and (min-width: 768px) {
   .footer-block {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
