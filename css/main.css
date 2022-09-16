@@ -845,6 +845,11 @@ body {
 .footer-block {
   align-items: baseline;
 }
+@media screen and (min-width: 768px) {
+  .footer-block {
+    display: flex;
+  }
+}
 
 .footer-social {
   display: inline-block;
@@ -895,6 +900,12 @@ body {
 .footer-social__icon {
   width: 20px;
   height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form-block {
+    display: inline;
+  }
 }
 
 .footer-form__title {

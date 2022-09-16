@@ -64,7 +64,12 @@
 
 .footer-block {
     //  display: flex;
+    
     align-items: baseline;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+    
 }
 
 .footer-social {
@@ -75,6 +80,8 @@
         text-align: center;
         margin-bottom: 60px;
     }
+        
+    
 }
 
 .footer-social__title {
@@ -124,6 +131,9 @@
 
 .footer-form-block {
     // margin-left: auto;
+    @media screen and (min-width: 768px) {
+        display: inline;
+    }
 }
 
 .footer-form__title {
