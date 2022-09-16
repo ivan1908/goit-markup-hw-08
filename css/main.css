@@ -80,13 +80,33 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 
 .container {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .modal__button {
@@ -121,6 +141,14 @@ body {
 .clients__title {
   color: var(--title-text-color);
   margin-bottom: 50px;
+}
+@media screen and (max-width: 1199px) {
+  .features__title,
+.work__title,
+.team__title,
+.clients__title {
+    margin-bottom: 30px;
+  }
 }
 
 .work__title {
@@ -495,12 +523,41 @@ body {
   padding-bottom: 0;
 }
 
-.feature {
-  display: flex;
+@media screen and (min-width: 480px) {
+  .feature {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .feature {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature {
+    display: flex;
+    margin: -15px;
+  }
 }
 
-.feature__item {
-  width: 270px;
+@media screen and (min-width: 480px) {
+  .feature__item {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .feature__item {
+    width: 354px;
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature__item {
+    width: 270px;
+    margin: 15px;
+  }
 }
 
 .feature__bg {
@@ -521,10 +578,6 @@ body {
   display: block;
 }
 
-.feature__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .feature__title {
   text-transform: uppercase;
   font-weight: 700;
@@ -533,11 +586,33 @@ body {
   margin-bottom: 10px;
   color: var(--title-text-color);
 }
+@media screen and (min-width: 480px) {
+  .feature__title {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .feature__title {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature__title {
+    display: block;
+  }
+}
 
 .feature__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
 }
 
 .work__list {
