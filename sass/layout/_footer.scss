@@ -25,7 +25,10 @@
         text-align: center;
         margin-bottom: 60px;
     }
-    
+    @media screen and (min-width:1200px) {
+        text-align: left;
+        margin-bottom: 0;
+    }
 }
 
 .address__item {
@@ -83,8 +86,9 @@
         margin-bottom: 60px;
     }
     @media screen and (min-width: 1200px) {
-        text-align: ;
-        margin-bottom: 60px;
+        text-align: left;
+        margin-bottom: 0;
+        margin-left: 70px;
     }
         
     
@@ -140,6 +144,11 @@
     @media screen and (min-width: 768px) {
         display: inline;
     }
+    @media screen and (min-width: 768px) {
+        display: inline;
+        margin-left: auto;
+        text-align: left;
+    }
 }
 
 .footer-form__title {
@@ -153,7 +162,9 @@
 
 .footer-form {
     // display: flex;
-    
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
 .footer-form__input {
@@ -179,6 +190,10 @@
     @media screen and (min-width: 480px) {
         margin-bottom: 20px;
         width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        width: 358px;
     }
 }
 
@@ -209,6 +224,9 @@
     }
     @media screen and (min-width: 480px) {
         margin: auto;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
     }
 }
 
