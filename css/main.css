@@ -863,6 +863,12 @@ body {
     margin-bottom: 60px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    text-align: 0;
+    margin-bottom: 60px;
+  }
+}
 
 .footer-social__title {
   color: var(--link-fill);
