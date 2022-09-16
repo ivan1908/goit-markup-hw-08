@@ -519,13 +519,10 @@ body {
   border-radius: 4px;
 }
 
-.features {
-  padding-bottom: 0;
-}
-
 @media screen and (min-width: 480px) {
   .feature {
-    display: block;
+    display: grid;
+    margin: -15px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -545,6 +542,7 @@ body {
 @media screen and (min-width: 480px) {
   .feature__item {
     width: 450px;
+    margin: 15px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -649,10 +647,6 @@ body {
 
 .team {
   background-color: var(--team-bg-color);
-}
-
-.team__list {
-  display: flex;
 }
 
 .team__item:not(:last-child) {

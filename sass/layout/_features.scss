@@ -1,10 +1,11 @@
 .features {
-    padding-bottom: 0;
+
 }
 
 .feature {
     @media screen and (min-width:480px) {
-        display: block;
+        display: grid;
+        margin: -15px;
     }
 
     @media screen and (min-width:768px) {
@@ -22,6 +23,7 @@
 .feature__item {
     @media screen and (min-width:480px) {
         width: 450px;
+        margin: 15px;
     }
 
     @media screen and (min-width:768px) {
@@ -33,7 +35,6 @@
         width: 270px;
         margin: 15px;
     }
-
 }
 
 .feature__bg {
