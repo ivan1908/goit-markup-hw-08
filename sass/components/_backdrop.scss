@@ -8,6 +8,10 @@
     z-index: 100;
     opacity: 1;
     transition: opacity var(--transition-dur-and-func), visibility var(--transition-dur-and-func);
+    @media screen and (max-width:767px) {
+        padding: 93px 15px 94px;
+        overflow-y: scroll ;
+    }
 }
 
 .backdrop--hidden {

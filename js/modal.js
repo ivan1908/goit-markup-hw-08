@@ -8,5 +8,6 @@ const refs = {
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
 function toggleModal() {
-    refs.modal.classList.toggle("backdrop--hidden");
+  document.body.classList.toggle("modal-open");
+  refs.modal.classList.toggle("backdrop--hidden");
 }

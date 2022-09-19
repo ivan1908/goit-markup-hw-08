@@ -65,9 +65,7 @@
 //     align-items: baseline;
 // }
 
-.footer-block {
-    //  display: flex;
-    
+.footer-block { 
     align-items: baseline;
     @media screen and (min-width: 768px) {
         display: flex;
@@ -80,7 +78,6 @@
 .footer-social {
     display: inline-block;
     align-items: baseline;
-    // margin-left: 70px;
     @media screen and (min-width: 480px) {
         text-align: center;
         margin-bottom: 60px;
@@ -140,7 +137,6 @@
 
 
 .footer-form-block {
-    // margin-left: auto;
     @media screen and (min-width: 768px) {
         display: inline;
     }
@@ -161,7 +157,6 @@
 }
 
 .footer-form {
-    // display: flex;
     @media screen and (min-width: 1200px) {
         display: flex;
     }
@@ -171,7 +166,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
-    // width: 358px;
     height: 50px;
     padding: 15px 0px 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -208,7 +202,6 @@
     padding: 10px 28px;
     width: 200px;
     border-radius: 4px;
-    // margin-left: 12px;
     cursor: pointer;
     display: flex;
     align-items: center;

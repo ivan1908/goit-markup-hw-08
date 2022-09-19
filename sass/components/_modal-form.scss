@@ -1,5 +1,8 @@
 .form {
     width: 448px;
+    @media screen and (max-width:1199px) {
+        width: 370px;
+    }
 }
 
 .form__title {
@@ -11,6 +14,10 @@
     display: flex;
     justify-content: center;
     margin-bottom: 12px;
+    @media screen and (max-width:1199px) {
+        line-height: 1.5;
+        text-align: center;
+    }
 }
 
 .form__field {
@@ -104,6 +111,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width:1199px) {
+        font-size: 12px;
+        line-height: 1.17;
+    }
 }
 
 .checkbox__input {
@@ -148,6 +159,10 @@
     font-size: 14px;
     line-height: 1.17;
     color: var(--link-color);
+    @media screen and (max-width:1199px) {
+        font-size: 12px;
+        line-height: 1.17;
+    }
 }
 
 .form__button {
