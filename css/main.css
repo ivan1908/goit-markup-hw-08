@@ -844,13 +844,11 @@ body.modal-open {
   .team__list {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team__list {
     display: flex;
-    margin: -15px;
   }
 }
 
@@ -869,13 +867,11 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .team__item {
     width: 354px;
-    margin: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team__item {
     width: 270px;
-    margin: 15px;
   }
 }
 
