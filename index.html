@@ -47,53 +47,55 @@
                     </li>
                 </ul>
             </nav>
-            <button class="menu-button-open " 
-            type="button" data-menu-open>
+            <button class="menu-button-open js-open-menu " 
+            aria-expanded="false" 
+            aria-controls="menu-container"
+            type="button">
                 <svg width="40" height="40" aria-label="Перемикач мобільного меню">
                     <use class="icon-menu" href="./images/icons.svg#menu"></use>
                 </svg>
             </button>
         </div>
-        <div class="mobile-menu " data-menu>
+        <div class="mobile-menu js-menu-container">
             <div class="container mobile-menu__container">
-                <button class="menu-button-close" 
-                type="button" data-menu-close>
-                    <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                <button class="menu-button-close js-close-menu"
+                aria-expanded="false" 
+                aria-controls="menu-container" 
+                type="button">
+                    <svg width="40" height="40"  aria-label="Перемикач мобільного меню">
                         <use class="icon-close" href="./images/icons.svg#menu-close"></use>
                     </svg>
                 </button>
-                <ul class="site-nav list">
-                    <li class="site-nav__item">
-                        <a class="site-nav__link site-nav__link--current" href="./index.html">Студія</a>
+                <ul class="site-nav-mobile list">
+                    <li class="site-nav-mobile__item">
+                        <a class="site-nav-mobile__link site-nav-mobile__link--current" href="./index.html">Студія</a>
                     </li>
-                    <li class="site-nav__item">
-                        <a class="site-nav__link" href="./portfolio.html">Портфоліо</a>
+                    <li class="site-nav-mobile__item">
+                        <a class="site-nav-mobile__link" href="./portfolio.html">Портфоліо</a>
                     </li>
-                    <li class="site-nav__item">
-                        <a class="site-nav__link" href="#">Контакти</a>
+                    <li class="site-nav-mobile__item">
+                        <a class="site-nav-mobile__link" href="#">Контакти</a>
                     </li>
                 </ul>
-                <ul class="contact list">
-                    <li class="contact__item">
-                        <a class="contact__link" href="tel:+380961111111">
-                            <svg class="contact__icon" width="10" height="16">
-                                <use href="./images/icons.svg#smartphone"></use>
-                            </svg>
+                <ul class="contact-mobile list">
+                    <li class="contact-mobile__item">
+                        <a class="contact-mobile__link phone" href="tel:+380961111111">
                             +38 096 111 11 11</a>
                     </li>
-                    <li class="contact__item">
-                        <a class="contact__link" href="mailto:info@devstudio.com">
-                            <svg class="contact__icon" width="16" height="12">
-                                <use href="./images/icons.svg#envelope"></use>
-                            </svg>
+                    <li class="contact-mobile__item">
+                        <a class="contact-mobile__link" href="mailto:info@devstudio.com">
                             info@devstudio.com</a>
                     </li>
                 </ul>
-                <ul class="list">
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">LinkId</a></li>
+                <ul class="social-mobile list">
+                    <li class="social-mobile__item">
+                        <a class="social-mobile__link" href="#">Instagram</a></li>
+                    <li class="social-mobile__item">
+                        <a class="social-mobile__link" href="#">Twitter</a></li>
+                    <li class="social-mobile__item">
+                        <a class="social-mobile__link" href="#">Facebook</a></li>
+                    <li class="social-mobile__item">
+                        <a class="social-mobile__link" href="#">LinkId</a></li>
                 </ul>
             </div>
         </div>
