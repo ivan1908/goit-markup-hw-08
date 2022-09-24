@@ -2,7 +2,6 @@
     background-color: var(--bg-color);
     align-items: center;
     border-bottom: 1px solid var(--header-border);
-    position: relative;
 }
 
 .header__logo {
@@ -13,41 +12,34 @@
     font-size: 26px;
     line-height: 1.19;
 }
+
 .main-nav {
     display: flex;
     align-items: center;
-    
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .header__nav {
     display: flex;
     align-items: center;
-    
 }
 
 .site-nav {
-    @media screen and (max-width:767px) {
-        margin-left: 40px;
-    }
-    display: block;
-   
-    @media screen and (min-width:768px) {
-        display: flex;
-        margin-left: 93px;
-    }
-    
+    display: flex;
+    margin-left: 93px;
 }
 
-.site-nav__item{
-    @media screen and (min-width:768px) {
+.site-nav__item {
     &:not(:last-child) {
         margin-right: 50px;
-    }
     }
 }
 
 .site-nav__link {
     color: var(--header-link-color);
+
     &:hover,
     &:focus {
         color: var(--link-color-focus);
@@ -67,23 +59,11 @@
     padding: 32px 0;
     display: inline-block;
     transition: color var(--transition-dur-and-func);
-    
-}
-.site-nav__link {
-    @media screen and (max-width:767px) {
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 1.18;
-    }
 }
 
 .contact {
     display: flex;
     margin-left: auto;
-    @media screen and (min-width:768px) and (max-width:1199px){
-        display: block;
-    }
-    
 }
 
 
@@ -93,6 +73,7 @@
     align-items: center;
     color: var(--contact__link-color);
     fill: currentColor;
+
     &:hover,
     &:focus {
         color: var(--link-color-focus);
@@ -104,7 +85,7 @@
 .site-nav__link--current {
     color: var(--link-color-focus);
     opacity: 1;
-    @media screen and (min-width:768px) {
+
     &::after {
         content: '';
         position: absolute;
@@ -116,22 +97,37 @@
         display: block;
         background-color: var(--link-color);
         border-radius: 2px;
-}
-}
+    }
 }
 
 
 
 .contact__item {
     display: flex;
-    @media screen and (min-width:1200px){
     margin-right: 10px;
+
     &:not(:first-child) {
         margin-left: 50px;
-    }
     }
 }
 
 .contact__icon {
     margin-right: 10px;
+}
+.site-nav {
+    display: none;
+}
+.contact {
+    display: none; 
+}
+.menu-button-open {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    line-height: 0;
+    cursor: pointer;
+    // @media screen and (min-width:768px) {
+    //     display: none;
+    // }
 }
