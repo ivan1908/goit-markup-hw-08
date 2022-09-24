@@ -9,6 +9,8 @@
             opacity: 0;
             visibility: hidden;
             pointer-events: none;
+
+            z-index: 10;
             transition: opacity var(--transition-dur-and-func),
                 visibility var(--transition-dur-and-func);
         }
@@ -30,6 +32,7 @@
             padding-left: 40px;
             padding-top: 32px;
             padding-bottom: 48px;
+            display: block;
         }
     
         .mobile-menu.is-open {
