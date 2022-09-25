@@ -1,12 +1,9 @@
 .header {
     background-color: var(--bg-color);
-    align-items: center;
     border-bottom: 1px solid var(--header-border);
     &>.container {
         display: flex;
-        justify-content: space-between;
     }
-    
 }
 
 

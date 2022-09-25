@@ -1,11 +1,12 @@
 .filter__list {
     display: flex;
-   @media screen and (min-width:480px) {
-        flex-wrap: wrap;
-        
-    }
+   flex-wrap: wrap;
+       
     @media screen and (min-width:768px){
         justify-content: center;
+    }
+    &:first-child {
+        margin-bottom: 15;
     }
 }
 
@@ -13,6 +14,9 @@
     &:not(:last-child) {
     margin-right: 8px;
 }
+    @media screen and (max-width:767px){
+        margin-bottom: 15px;
+    }
 }
 
 .filter__button {
@@ -36,4 +40,5 @@
     &:first-child {
         padding: 6px 25px;
     }
+    
 }
