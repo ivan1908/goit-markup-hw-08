@@ -1,15 +1,15 @@
 .clients__list {
     display: flex;
     margin: 0 auto;
-    @media screen and (min-width:480px) {
+    
         flex-wrap: wrap;
         margin: -15px;
-    }
+    
 }
 .clients__item {
-    @media screen and (min-width:480px) {
+   
         margin: 15px;
-    }
+    
 }
 
 .clients__link {
@@ -29,9 +29,11 @@
     &:not(:last-child) {
         margin-right: 30px;
     }
-    @media screen and (min-width:480px) {
-        width: 210px;
+    @media screen and (max-width:479px) {
+        width: auto;
     }
+        width: 210px;
+    
     @media screen and (min-width:768px) {
         width: 226px;
     }
