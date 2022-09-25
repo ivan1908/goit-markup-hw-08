@@ -26,6 +26,10 @@
     justify-content: space-between;
     // padding-top: 10px;
     // padding-bottom: 10px;
+    @media screen and (max-width:767px){
+        padding: 10px 15px;
+    }
+    
 }
 
 .header__nav {
@@ -130,6 +134,11 @@
         background-color: transparent;
         line-height: 0;
         cursor: pointer;
+        transition: fill var(--transition-dur-and-func);
+        &:hover,
+        &:focus {
+            fill: var(--link-color-focus);
+        }
     }
 }
 

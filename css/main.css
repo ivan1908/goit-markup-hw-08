@@ -136,6 +136,11 @@ body.modal-open {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 767px) {
+  .main-nav {
+    padding: 10px 15px;
+  }
+}
 
 .header__nav {
   display: flex;
@@ -223,6 +228,10 @@ body.modal-open {
     background-color: transparent;
     line-height: 0;
     cursor: pointer;
+    transition: fill var(--transition-dur-and-func);
+  }
+  .menu-button-open:hover, .menu-button-open:focus {
+    fill: var(--link-color-focus);
   }
 }
 @media screen and (min-width: 768px) {
@@ -292,6 +301,10 @@ body.modal-open {
     background-color: transparent;
     line-height: 0;
     cursor: pointer;
+    transition: fill var(--transition-dur-and-func);
+  }
+  .menu-button-close:hover, .menu-button-close:focus {
+    fill: var(--link-color-focus);
   }
   .mobile-menu__container {
     position: relative;

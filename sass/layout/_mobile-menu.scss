@@ -25,6 +25,11 @@
             background-color: transparent;
             line-height: 0;
             cursor: pointer;
+            transition: fill var(--transition-dur-and-func);
+            &:hover,
+            &:focus {
+                fill: var(--link-color-focus);
+            } 
         }
     
         .mobile-menu__container {
