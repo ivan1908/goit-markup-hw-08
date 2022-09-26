@@ -143,6 +143,7 @@ body.modal-open {
 .header__nav {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .site-nav__item:not(:last-child) {
